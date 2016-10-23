@@ -13,7 +13,7 @@ class Triangle
         return :isosceles
     elsif a!=b && b!=c && c!=a && a!=0 && b!=0 && c!=0 && !( a<0 ||  b<0 ||  c<0) && (b+c >a)
         return :scalene
-    elsif (a==0 && b==0 && c==0) ||(  a<0 ||  b<0 ||  c<0) || (a==b && b<c) || (a==c && a<b) || (c+b <a) #|| (a>b && a>c && b>c)
+    elsif (a==0 && b==0 && c==0) ||(  a<0 ||  b<0 ||  c<0) || (a==b && b<c) || (a==c && a<b) || (c+b <a) 
         raise TriangleError
     else
       return :isosceles
