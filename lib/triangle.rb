@@ -27,3 +27,4 @@ end
 
 class TriangleError < StandardError
 end
+a=Side.new
